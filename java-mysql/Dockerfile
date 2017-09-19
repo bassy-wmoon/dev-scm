@@ -27,4 +27,6 @@ RUN ln -s apache-maven-3.5.0 maven
 ENV M2_HOME=~/maven
 ENV PATH=${M2_HOME}/bin:${PATH}
 
+WORKDIR /projects
+
 CMD ["mysqld"]
